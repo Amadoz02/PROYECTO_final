@@ -1,0 +1,28 @@
+<section class="carrito">
+  <h2 class="carrito__titulo">Tu carrito de compras</h2>
+
+  <div class="carrito__lista">
+    <!-- Ejemplo de item en el carrito -->
+    <article class="carrito__item">
+      <img src="../assets/img/ejemplo-zapatilla.jpg" alt="Producto" class="carrito__img" />
+      <div class="carrito__info">
+        <h3 class="carrito__nombre">Zapatilla Urbana</h3>
+        <p class="carrito__precio">$59.99</p>
+        <div class="carrito__cantidad">
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" value="1" min="1" />
+        </div>
+      </div>
+      <button class="carrito__eliminar" title="Eliminar">
+        <i data-lucide="trash-2"></i>
+      </button>
+    </article>
+
+    <!-- Más artículos pueden añadirse dinámicamente -->
+  </div>
+
+  <div class="carrito__resumen">
+    <p>Total: <span class="carrito__total">$59.99</span></p>
+    <button class="carrito__comprar">Finalizar compra</button>
+  </div>
+</section>
