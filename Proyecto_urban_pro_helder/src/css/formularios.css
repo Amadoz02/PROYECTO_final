@@ -1,21 +1,14 @@
-.form__overlay {
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-overlay);
-  z-index: 1;
-  
-}
-
-.form__content {
-  position: relative;
-  z-index: 2;
+/* === FORMULARIO BASE === */
+.form {
+  margin: 105px auto 0 auto;
   background-color: rgba(0, 0, 0, 0.85);
-  padding: 3rem;
-  border-radius: 16px;
-  max-width: 550px;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  max-width: 500px;
   width: 100%;
-  animation: fadeInLeft 1s ease forwards;
-  opacity: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  opacity: 1;
 }
 
 .form__title {
@@ -34,7 +27,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  padding: 3px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .form__label {
@@ -42,15 +40,45 @@
   color: var(--color-white);
 }
 
-.form__input {
-  padding: 1rem;
-  border: 1px solid #00000000;
-  border-radius: 8px;
-  font-size: 1rem;
+.form__input,
+.form__textarea {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
   background-color: #1a1a1a;
+  font-size: 1rem;
   color: var(--color-white);
+  font-family: var(--font-text);
+  resize: none;
 }
 
+body.body--register {
+  padding: 2rem;
+  background-image: url('../resources/img24.jpg');
+  overflow-y: auto;
+  height: 100vh;
+  background-repeat:repeat;
+
+
+}
+
+/* BACK BUTTON */
+.btn--back {
+  position: fixed;
+  left: 3%;
+  top: 5%;
+  z-index: 1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  background: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .form__links {
   margin-top: 1.5rem;
   text-align: center;
@@ -65,18 +93,75 @@
   text-decoration: none;
   transition: color 0.3s ease;
 }
+.form__links {
+  margin-top: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 .form__link:hover {
   color: var(--color-accent);
 }
 
-@keyframes fadeInLeft {
-  0% {
-    transform: translateX(-30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+
+
+
+
+
+/* === REGISTRO === */
+.body--register {
+  padding: 2rem;
+  background-image: url('../resources/img24.jpg');
+  /*que se pueda escrolear el contenido, solo una parte que es el formulario de registro que sea estatico*/
+  position: relative;
+   overflow: auto;
+   height: 100vh;
+
+  
 }
+.register__container {
+  margin: 105px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+ .register__group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 3px;
+}
+.register__input, 
+.register__textarea {
+  resize: none;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  font-size: 1rem;
+  color: var(--color-white);
+  font-family: var(--font-text);
+}
+
+
+
+/*LOGIN STYLES*/
+.body--login {
+  background-image: url('../resources/img24.jpg');
+}
+.login__button {
+  font-weight: 700;
+  
+} 
+.login__container{
+  min-width: 440px;
+  min-height: max-content;
+}
+

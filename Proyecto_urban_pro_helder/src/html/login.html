@@ -8,13 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist&display=swap" rel="stylesheet" />
 </head>
 <body class="body body--login">
-  <div class="form__overlay"></div>
- <a href="./index.html" class="btn--back btn"><span class="material-symbols-outlined">arrow_left_alt</span></a>
+  <a href="./index.html" class="btn btn--back">
+    <span class="material-symbols-outlined">arrow_left_alt</span>
+  </a>
 
-  <section class="login__container">
-
-    <div class="form__content login__content">
+  <section class="form">
+    <div class="form__content">
       <h1 class="form__title">Urban<span class="form__brand">_Pro</span></h1>
+
       <form class="form__group" action="#" method="POST" novalidate>
         <label class="form__label" for="email">Usuario</label>
         <input class="form__input" type="email" id="email" name="email" required />
@@ -22,7 +23,7 @@
         <label class="form__label" for="password">Contraseña</label>
         <input class="form__input" type="password" id="password" name="password" required />
 
-        <button class="login__button btn" type="submit" >Ingresar</button>
+        <button class="btn" type="submit">Ingresar</button>
       </form>
 
       <div class="form__links">

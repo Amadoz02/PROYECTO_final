@@ -4,46 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Urban Pro | Home</title>
-
-  <!-- Enlace a hoja de estilos principal -->
   <link rel="stylesheet" href="../css/styles.css" />
-
-  <!-- Librería de íconos Lucide (similar a Feather Icons) -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
-  <!-- Contenedor principal -->
   <div class="home">
-
-    <!-- Encabezado del sitio -->
     <header class="home__header">
-      <!-- Logo de la tienda -->
       <h1 class="home__logo">Urban<span class="home__logo--highlight">Pro</span></h1>
-
-      <!-- Barra de búsqueda -->
       <form class="home__search">
         <input type="text" class="home__search-input" placeholder="Buscar productos..." />
         <button type="submit" class="home__search-btn">
           <i data-lucide="search" class="home__search-icon"></i>
         </button>
       </form>
-
-      <!-- Navegación principal del usuario -->
       <nav class="home__nav">
-        <a href="#" class="home__nav-link">log aut</a>
-
+        <a href="#" class="home__nav-link">Log out</a>
         <a href="#" class="home__nav-link">Perfil</a>
-
         <a href="#" id="nav-home" class="home__nav-link">Inicio</a>
-        
-        <!-- Botón de favoritos con contador -->
         <button id="favoritesBtn" class="home__icon-btn" title="Favoritos">
           <i data-lucide="heart" class="home__icon"></i>
           <span class="home__icon-count">2</span>
         </button>
-
-        <!-- Botón de carrito con contador -->
         <button class="home__icon-btn" id="cart-toggle">
           <i data-lucide="shopping-cart" class="home__icon"></i>
           <span class="home__icon-count" id="cart-count">0</span>
@@ -51,7 +32,6 @@
       </nav>
     </header>
 
-    <!-- Menú lateral con categorías -->
     <aside class="home__sidebar">
       <ul class="home__menu">
         <li><a href="#" class="home__menu-link">Hombres</a></li>
@@ -61,131 +41,55 @@
       </ul>
     </aside>
 
-    <!-- Contenido principal con productos -->
     <main id="main-content" class="home__main">
-       <!-- Contenido principal con productos -->
-
       <section class="product-grid">
-              <!-- Card de producto -->
-              <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
-          <button class="product-card__favorite" aria-label="Agregar a favoritos">
-            <i data-lucide="heart" class="product-card__favorite-icon"></i>
-          </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
-          <h2 class="product-card__title">Sudadera Urbana</h2>
-          <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
-        </article>
-      </section>
-            <section class="product-grid">
-        <!-- Card de producto -->
+        <!-- Cards de producto -->
         <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
           <button class="product-card__favorite" aria-label="Agregar a favoritos">
             <i data-lucide="heart" class="product-card__favorite-icon"></i>
           </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
+          <img src="../resources/img1.jpg" alt="Producto 1" class="product-card__img" />
           <h2 class="product-card__title">Sudadera Urbana</h2>
           <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
+          <button class="btn product-card__btn">Agregar</button>
         </article>
-      </section>
-            <section class="product-grid">
-        <!-- Card de producto -->
-        <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
-          <button class="product-card__favorite" aria-label="Agregar a favoritos">
-            <i data-lucide="heart" class="product-card__favorite-icon"></i>
-          </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
-          <h2 class="product-card__title">Sudadera Urbana</h2>
-          <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
-        </article>
-      </section>
-            <section class="product-grid">
-        <!-- Card de producto -->
-        <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
-          <button class="product-card__favorite" aria-label="Agregar a favoritos">
-            <i data-lucide="heart" class="product-card__favorite-icon"></i>
-          </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
-          <h2 class="product-card__title">Sudadera Urbana</h2>
-          <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
-        </article>
-      </section>
-            <section class="product-grid">
-        <!-- Card de producto -->
-        <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
-          <button class="product-card__favorite" aria-label="Agregar a favoritos">
-            <i data-lucide="heart" class="product-card__favorite-icon"></i>
-          </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
-          <h2 class="product-card__title">Sudadera Urbana</h2>
-          <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
-        </article>
-      </section>
-            <section class="product-grid">
-        <!-- Card de producto -->
-        <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
-          <button class="product-card__favorite" aria-label="Agregar a favoritos">
-            <i data-lucide="heart" class="product-card__favorite-icon"></i>
-          </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
-          <h2 class="product-card__title">Sudadera Urbana</h2>
-          <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
-        </article>
-      </section>
-            <section class="product-grid">
-        <!-- Card de producto -->
-        <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
-          <button class="product-card__favorite" aria-label="Agregar a favoritos">
-            <i data-lucide="heart" class="product-card__favorite-icon"></i>
-          </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
-          <h2 class="product-card__title">Sudadera Urbana</h2>
-          <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
-        </article>
-      </section>
-            <section class="product-grid">
-        <!-- Card de producto -->
-        <article class="product-card">
-          <!-- Botón de favorito en la esquina -->
-          <button class="product-card__favorite" aria-label="Agregar a favoritos">
-            <i data-lucide="heart" class="product-card__favorite-icon"></i>
-          </button>
-          <img src="./src/resources/img1.jpg" alt="Producto 1" class="product-card__img">
-          <h2 class="product-card__title">Sudadera Urbana</h2>
-          <p class="product-card__price">$89.000</p>
-          <button class="product-card__btn btn">Agregar</button>
-        </article>
-      </section>
 
+        <article class="product-card">
+          <button class="product-card__favorite" aria-label="Agregar a favoritos">
+            <i data-lucide="heart" class="product-card__favorite-icon"></i>
+          </button>
+          <img src="../resources/img1.jpg" alt="Producto 2" class="product-card__img" />
+          <h2 class="product-card__title">Sudadera Urbana</h2>
+          <p class="product-card__price">$89.000</p>
+          <button class="btn product-card__btn">Agregar</button>
+        </article>
 
+        <article class="product-card">
+          <button class="product-card__favorite" aria-label="Agregar a favoritos">
+            <i data-lucide="heart" class="product-card__favorite-icon"></i>
+          </button>
+          <img src="../resources/img1.jpg" alt="Producto 3" class="product-card__img" />
+          <h2 class="product-card__title">Sudadera Urbana</h2>
+          <p class="product-card__price">$89.000</p>
+          <button class="btn product-card__btn">Agregar</button>
+        </article>
 
+        <article class="product-card">
+          <button class="product-card__favorite" aria-label="Agregar a favoritos">
+            <i data-lucide="heart" class="product-card__favorite-icon"></i>
+          </button>
+          <img src="../resources/img1.jpg" alt="Producto 4" class="product-card__img" />
+          <h2 class="product-card__title">Sudadera Urbana</h2>
+          <p class="product-card__price">$89.000</p>
+          <button class="btn product-card__btn">Agregar</button>
+        </article>
+      </section>
     </main>
-
-
-
-
-
   </div>
 
-
-  <script>   lucide.createIcons(); </script>
-  <script type="module" src="../js/main.js"></script>
-
+  <script>
+    lucide.createIcons();
+  </script>
+  <!-- <script type="module" src="../js/main.js"></script> -->
 </body>
 </html>
-
-
-   

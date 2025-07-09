@@ -27,64 +27,6 @@
 
 
 
-/*LOGIN STYLES*/
-.body--login {
-  background-image: url('../resources/img24.jpg');
-}
-.login__button {
-  font-weight: 700;
-  
-} 
-.login__container{
-  min-width: 440px;
-  min-height: max-content;
-}
-
-
-
-
-/* === REGISTRO === */
-.body--register {
-  padding: 2rem;
-  background-image: url('../resources/img24.jpg');
-  /*que se pueda escrolear el contenido, solo una parte que es el formulario de registro que sea estatico*/
-  position: relative;
-   overflow: auto;
-   height: 100vh;
-
-  
-}
-.register__container {
-  margin: 105px 0 0 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 3rem 2.5rem;
-  border-radius: 20px;
-  max-width: 500px;
-  width: 100%;
-  z-index: 1;
-  opacity: 1;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-}
- .register__group {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 3px;
-}
-.register__input, 
-.register__textarea {
-  resize: none;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #1a1a1a;
-  font-size: 1rem;
-  color: var(--color-white);
-  font-family: var(--font-text);
-}
-
-
-
 
 
 
